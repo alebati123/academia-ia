@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Academia IA</title>
+    <meta name="description" content="Ponte en contacto con Academia IA para cursos, asesoramiento B2B o dudas generales.">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class='bx bx-brain'></i> Academia<span>IA</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="capacitaciones.html" class="nav-link">Cursos</a>
+                <a href="servicios.html" class="nav-link">Consultoría</a>
+                <a href="eventos.html" class="nav-link">Eventos</a>
+                <a href="nosotros.html" class="nav-link">Nosotros</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+            </nav>
+
+            <button class="hamburger">
+                <i class='bx bx-menu'></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 150px; background: radial-gradient(circle at 50% -50%, rgba(59, 130, 246, 0.2) 0%, rgba(11,12,16,1) 80%);">
+        <div class="container text-center">
+            <h1 class="hero-title">Ponte en <span class="text-gradient">Contacto</span></h1>
+            <p class="hero-subtitle">¿Tienes dudas sobre un curso o necesitas asesoramiento para tu empresa? Escríbenos.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="grid-2">
+                
+                <!-- Info -->
+                <div>
+                    <h2 style="font-size: 2rem; margin-bottom: 2rem; color: var(--text-light);">Hablemos</h2>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 2rem; margin-bottom: 3rem;">
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <i class='bx bx-envelope' style="font-size: 2rem; color: var(--accent-green);"></i>
+                            <div>
+                                <h4 style="color: var(--text-light); margin-bottom: 0.3rem;">Email</h4>
+                                <p style="color: var(--text-main);">hola@academiaia.com</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <i class='bx bxl-whatsapp' style="font-size: 2rem; color: var(--accent-blue);"></i>
+                            <div>
+                                <h4 style="color: var(--text-light); margin-bottom: 0.3rem;">WhatsApp</h4>
+                                <p style="color: var(--text-main);">+54 9 3464 00-0000</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <i class='bx bx-map' style="font-size: 2rem; color: var(--accent-blue);"></i>
+                            <div>
+                                <h4 style="color: var(--text-light); margin-bottom: 0.3rem;">Ubicación</h4>
+                                <p style="color: var(--text-main);">Arequito, Santa Fe, Argentina<br>(Atención virtual a todo el mundo)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--text-light); margin-bottom: 1rem;">Síguenos</h4>
+                    <div style="display: flex; gap: 1rem; font-size: 2rem;">
+                        <a href="#" style="color: var(--text-main);"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="#" style="color: var(--text-main);"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" style="color: var(--text-main);"><i class='bx bxl-youtube'></i></a>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="card">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" placeholder="Ej. Juan Pérez" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="juan@ejemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Empresa (Opcional)</label>
+                            <input type="text" class="form-control" placeholder="Tu empresa">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Motivo de consulta</label>
+                            <select class="form-control" required style="appearance: none; cursor: pointer;">
+                                <option value="" disabled selected>Selecciona una opción...</option>
+                                <option value="cursos">Cursos para particulares</option>
+                                <option value="incompany">Capacitación In-Company</option>
+                                <option value="consultoria">Consultoría / Desarrollo a medida</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Mensaje</label>
+                            <textarea class="form-control" rows="5" placeholder="¿En qué te podemos ayudar?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                        <i class='bx bx-brain'></i> Academia<span>IA</span>
+                    </a>
+                    <p style="color: var(--text-main); margin-bottom: 1rem;">
+                        Democratizando el acceso a la Inteligencia Artificial desde Arequito, Santa Fe, para todo el mundo.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Enlaces</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Inicio</a>
+                        <a href="capacitaciones.html">Cursos</a>
+                        <a href="servicios.html">Consultoría</a>
+                        <a href="nosotros.html">Nosotros</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <div class="footer-links">
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Política de Privacidad</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <div class="footer-links">
+                        <a href="mailto:hola@academiaia.com"><i class='bx bx-envelope'></i> hola@academiaia.com</a>
+                        <a href="#"><i class='bx bxl-whatsapp'></i> +54 9 3464 00-0000</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Academia IA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <a href="#" class="wa-fab" target="_blank" aria-label="Chat en WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
