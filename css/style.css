@@ -161,6 +161,23 @@ img {
   color: var(--accent-silver);
 }
 
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  font-size: 1.2rem;
+}
+
+.logo-text span {
+  font-size: 1rem;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
 .nav-menu {
   display: flex;
   gap: 2rem;
@@ -458,6 +475,18 @@ img {
   .mobile-video { display: block; }
 
   .hamburger { display: block; }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+  
+  .logo-text span {
+    font-size: 0.85rem;
+  }
+
+  .logo-img {
+    width: 60px;
+  }
   
   .nav-menu {
     position: fixed;
