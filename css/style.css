@@ -400,6 +400,15 @@ img {
   background: rgba(255,255,255,0.08);
 }
 
+.form-control option {
+  background-color: var(--bg-card);
+  color: var(--text-light);
+}
+
+.form-control option:disabled {
+  color: var(--text-main);
+}
+
 /* Footer */
 .footer {
   background: #060709;
@@ -438,33 +447,83 @@ img {
   font-size: 0.9rem;
 }
 
-/* WhatsApp FAB */
-.wa-fab {
+/* Instagram FAB */
+.ig-fab {
   position: fixed;
   bottom: 30px;
   right: 30px;
   width: 60px;
   height: 60px;
-  background: #25D366;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
   z-index: 1000;
   transition: var(--transition);
 }
 
-.wa-fab:hover {
+.ig-fab:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  box-shadow: 0 6px 20px rgba(220, 39, 67, 0.6);
+}
+
+/* Brand Grid & Brand Card Styles */
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.brand-logo-card {
+  background: #141722;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  transition: var(--transition);
+  filter: grayscale(40%) opacity(0.85);
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.brand-logo-card:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: translateY(-5px);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+  background: rgba(18, 21, 28, 0.9);
+}
+
+.brand-logo-card i {
+  font-size: 2.5rem;
+  transition: var(--transition);
+}
+
+.brand-logo-card:nth-child(1) i { color: var(--accent-silver); }
+.brand-logo-card:nth-child(2) i { color: var(--accent-green); }
+.brand-logo-card:nth-child(3) i { color: var(--accent-purple); }
+.brand-logo-card:nth-child(4) i { color: var(--accent-blue); }
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-light);
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
 /* Responsive */
 @media (max-width: 992px) {
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4, .brand-grid { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-title { font-size: 2.8rem; }
@@ -506,7 +565,7 @@ img {
     right: 0;
   }
   
-  .grid-2, .grid-3, .grid-4 {
+  .grid-2, .grid-3, .grid-4, .brand-grid {
     grid-template-columns: 1fr;
   }
   
